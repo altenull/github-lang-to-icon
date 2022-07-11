@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
+import { GithubLang } from '../models/github-lang.model';
 
-const GithubLangToIcon = () => {
+interface Props {
+  lang: GithubLang;
+}
+
+const GithubLangToIcon: React.FC<Props> = ({ lang }: Props) => {
   return <div>GithubLangToIcon</div>;
 };
 
-export GithubLangToIcon;
+export default GithubLangToIcon;
