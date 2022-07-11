@@ -1,0 +1,31 @@
+{
+  "name": "@altenull/github-lang-to-icon",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "github lanaguge to icon",
+    "github language",
+    "github lang to icon",
+    "github lang"
+  ],
+  "author": "Heonyoung Kim <altenull@gmail.com> (https://github.com/altenull)",
+  "bugs": {
+    "url": "https://github.com/altenull/github-lang-to-icon/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^17.0.2 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.76.0",
+    "typescript": "^4.7.4"
+  }
+}
