@@ -37,3 +37,5 @@ export type GithubLang =
   | 'Swift'
   | 'TypeScript'
   | 'Vim Script';
+
+export type LowercasedGithubLang = Lowercase<GithubLang>;
