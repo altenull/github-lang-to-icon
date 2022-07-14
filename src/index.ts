@@ -1,5 +1,3 @@
-export const log = () => {
-  console.log("hello");
-};
+import GithubLangToIcon from './lib/components/GithubLangToIcon';
 
-export * from "./GithubLangToIcon.tsx";
+export default GithubLangToIcon;
