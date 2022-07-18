@@ -20,7 +20,7 @@
     "build": "rollup -c",
     "watch": "rollup -cw"
   },
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "react": "^17.0.2 || ^18.0.0"
   },
