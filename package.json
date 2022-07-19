@@ -12,6 +12,10 @@
   "bugs": {
     "url": "https://github.com/altenull/github-lang-to-icon/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altenull/github-lang-to-icon.git"
+  },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
