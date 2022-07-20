@@ -4,7 +4,7 @@
     "esModuleInterop": true,
     "lib": ["dom", "esnext"],
     "jsx": "react",
-    "module": "esnext",
+    "module": "es6",
     "moduleResolution": "node",
     "baseUrl": "./",
     "strict": true,

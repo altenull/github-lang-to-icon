@@ -10,7 +10,7 @@ export default [
     input: './src/index.ts',
     output: {
       file: packageJson.main,
-      format: 'es',
+      format: 'esm',
       sourcemap: true,
     },
     plugins: [
@@ -20,8 +20,8 @@ export default [
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       }),
       nodeResolve(),
-      typescript({ tsconfig: './tsconfig.json' }),
       commonjs(),
+      typescript({ tsconfig: './tsconfig.json' }),
     ],
   },
   {
