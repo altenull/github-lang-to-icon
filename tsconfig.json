@@ -1,16 +1,17 @@
 {
   "compilerOptions": {
     "target": "es5",
-    // "esModuleInterop": true,
-    "lib": ["dom", "esnext"],
+    "esModuleInterop": true,
+    "lib": ["es6", "dom", "esnext"],
     "jsx": "react",
-    "module": "es6",
+    "module": "esnext",
     "moduleResolution": "node",
     "baseUrl": "./",
     "strict": true,
     "declaration": true,
     "declarationDir": "types",
     "outDir": "dist",
-    "sourceMap": true
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true
   }
 }
