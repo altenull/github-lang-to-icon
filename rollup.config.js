@@ -1,8 +1,9 @@
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import packageJson from './package.json';
 
 export default [
@@ -14,7 +15,8 @@ export default [
       sourcemap: true,
     },
     plugins: [
-      nodeResolve(),
+      peerDepsExternal(),
+      resolve(),
       commonjs(),
       typescript({ tsconfig: './tsconfig.json' }),
       babel({
