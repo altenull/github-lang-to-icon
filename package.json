@@ -26,8 +26,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "watch": "rollup -cw",
-    "prepare": "rm -rf dist && yarn build",
-    "publish": "npm publish --access=public"
+    "prepare": "rm -rf dist && yarn build"
   },
   "license": "MIT",
   "peerDependencies": {

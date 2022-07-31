@@ -14,14 +14,14 @@ export default [
       sourcemap: true,
     },
     plugins: [
+      nodeResolve(),
+      commonjs(),
+      typescript({ tsconfig: './tsconfig.json' }),
       babel({
         babelHelpers: 'bundled',
         presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       }),
-      nodeResolve(),
-      commonjs(),
-      typescript({ tsconfig: './tsconfig.json' }),
     ],
   },
   {
