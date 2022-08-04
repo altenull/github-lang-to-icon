@@ -6,6 +6,8 @@ import dts from 'rollup-plugin-dts';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import packageJson from './package.json';
 
+const extensions = ['.js', '.jsx', '.ts', '.tsx'];
+
 export default [
   {
     input: './src/index.ts',
@@ -16,13 +18,13 @@ export default [
     },
     plugins: [
       peerDepsExternal(),
-      resolve(),
+      resolve({ extensions }),
       commonjs(),
-      typescript({ tsconfig: './tsconfig.json' }),
+      typescript(),
       babel({
         babelHelpers: 'bundled',
         presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions,
       }),
     ],
   },

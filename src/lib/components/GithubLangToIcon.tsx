@@ -127,8 +127,6 @@ const langToIcon = (lang: GithubLang | LowercasedGithubLang, { size }: IconProps
   return langToIconMap[lang];
 };
 
-const GithubLangToIcon: React.FC<Props> = ({ lang, size = 128 }: Props) => {
+export const GithubLangToIcon: React.FC<Props> = ({ lang, size = 128 }: Props) => {
   return <>{langToIcon(lang, { size })}</>;
 };
-
-export default GithubLangToIcon;
