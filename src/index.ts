@@ -1,1 +1,1 @@
-export { GithubLangToIcon } from './lib/components/GithubLangToIcon';
+export { default as GithubLangToIcon } from './lib/components/GithubLangToIcon';
