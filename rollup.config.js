@@ -20,7 +20,7 @@ export default [
       peerDepsExternal(),
       resolve({ extensions }),
       commonjs(),
-      typescript(),
+      typescript({ tsconfig: './tsconfig.json' }),
       babel({
         babelHelpers: 'bundled',
         presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-typescript'],
