@@ -42,9 +42,10 @@ import IconVimScript from './IconVimScript';
 
 interface Props extends Partial<IconProps> {
   lang: GithubLang | LowercasedGithubLang;
+  style?: React.CSSProperties;
 }
 
-const langToIcon = (lang: GithubLang | LowercasedGithubLang, { size }: IconProps) => {
+const langToIcon = (lang: GithubLang | LowercasedGithubLang, { size, style }: IconProps) => {
   const langToIconMap: Record<GithubLang | LowercasedGithubLang, React.ReactNode> = {
     C: <IconC size={size} />,
     c: <IconC size={size} />,
@@ -127,8 +128,8 @@ const langToIcon = (lang: GithubLang | LowercasedGithubLang, { size }: IconProps
   return langToIconMap[lang];
 };
 
-const GithubLangToIcon: React.FC<Props> = ({ lang, size = 128 }: Props) => {
-  return <>{langToIcon(lang, { size })}</>;
+const GithubLangToIcon: React.FC<Props> = ({ lang, size = 40, style }: Props) => {
+  return <span style={{ display: 'inline-block', ...style }}>{langToIcon(lang, { size })}</span>;
 };
 
 export default GithubLangToIcon;
