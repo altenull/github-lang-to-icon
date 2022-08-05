@@ -45,7 +45,7 @@ interface Props extends Partial<IconProps> {
   style?: React.CSSProperties;
 }
 
-const langToIcon = (lang: GithubLang | LowercasedGithubLang, { size, style }: IconProps) => {
+const convertLangToIcon = (lang: GithubLang | LowercasedGithubLang, { size }: IconProps) => {
   const langToIconMap: Record<GithubLang | LowercasedGithubLang, React.ReactNode> = {
     C: <IconC size={size} />,
     c: <IconC size={size} />,
@@ -129,7 +129,7 @@ const langToIcon = (lang: GithubLang | LowercasedGithubLang, { size, style }: Ic
 };
 
 const GithubLangToIcon: React.FC<Props> = ({ lang, size = 40, style }: Props) => {
-  return <span style={{ display: 'inline-block', ...style }}>{langToIcon(lang, { size })}</span>;
+  return <span style={{ display: 'inline-block', ...style }}>{convertLangToIcon(lang, { size })}</span>;
 };
 
 export default GithubLangToIcon;
