@@ -48,10 +48,14 @@ render() {
 |  Prop   |                Type                | Default |                     Description                     |
 | :-----: | :--------------------------------: | :-----: | :-------------------------------------------------: |
 | `lang`  | GithubLang \| LowercasedGithubLang |         | type LowercasedGithubLang = Lowercase\<GithubLang\> |
-| `size`  |        number \| undefined         |   40    |                icon's width & height                |
+| `size`  |        number \| undefined         |   40    |                Icon's width & height                |
 | `style` |  React.CSSProperties \| undefined  |         |                                                     |
 
 ### Supported Languages
+
+- `GithubLang(type)` is based on response of [List repository languages (Github API)](https://docs.github.com/en/rest/repos/repos#list-repository-languages).
+- The source of below icon images is [devicon](https://github.com/devicons/devicon).
+- [About repository languages (Github API)](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-repository-languages)
 
 | GithubLang(type) |                                                  Icon(svg)                                                   |
 | :--------------: | :----------------------------------------------------------------------------------------------------------: |
