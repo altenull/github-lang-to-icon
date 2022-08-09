@@ -1,6 +1,6 @@
 {
   "name": "@altenull/github-lang-to-icon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component that converts the GitHub language into an icon.",
   "keywords": [
     "github lanaguge to icon",
