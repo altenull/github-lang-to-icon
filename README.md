@@ -22,7 +22,7 @@
   <b>React component that converts the GitHub language into an icon.</b><br />
 </p>
 
-## ⚙ Installation
+## ⚙️ Installation
 
 ```bash
 $ npm install --save @altenull/github-lang-to-icon
